@@ -3,22 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DataSpelHobby</title>
-        
+        <title>DataSpelHobby</title>  
     </head>
     <body>
-    <main>
-        <header>
+        <!--Header del som innehåller rubrik och navigationbar-->
+        <header class="headerbody">
             <h1>Mitt Dataspels Beroende</h1>
+            <h2 id="navigation">Navigationsbar</h2>
         <nav>
             <ul>
-                <li><a href="introduction">Introduktion</a></li>
-                <li><a href="relevantinformation">Relevant Information</a></li>
-                <li><a href="summary">Sammanfattning</a></li>
-                <li><a href="contact">Kontaktuppgifter och Referenser</a></li>
+                <li><a href="#introduction">Introduktion</a></li>
+                <li><a href="#relevantinformation">Relevant Information</a></li>
+                <li><a href="#summary">Sammanfattning</a></li>
+                <li><a href="#contact">Kontaktuppgifter och Referenser</a></li>
             </ul>
         </nav>
         </header>
+        <!--Main del, innehåller tre olika sektioner, Introduktion, Relevant Information och Summering-->
+    <main class="mainbody">
         <section id="introduction">
             <h2>Introduktion</h2>
             <p>Min hobby består av datorspel i alla olika genrer, roliga, spännande till frustrerande.</p>
@@ -27,13 +29,13 @@
         <section id="relevantinformation">
             <h2>Relevant Information för hobbyn</h2>
             <h3>Krav för att påbörja hobbyn:</h3>
-            <ul>
+            <ul class="specificationlist">
                 <li>En dator.</li>
                 <li>Eventuell Spelportal som till exempel Steam, inget krav däremot.</li>
                 <li>Pengar, nya spel är jävligt dyra.</li>
             </ul>
             <h3>Tabell för några av mina favoritspel, genre och hur duktig jag är på spelet:</h3>
-            <table>
+            <table class="gametable">
                 <tr>
                     <th>Spelnamn:</th>
                     <th>Genre:</th>
@@ -55,7 +57,7 @@
                     <th>Gör allt förutom Main Storyn</th>
                 </tr>
             </table>
-            <article>
+            <article class="informationtext">
                 <p>Det finns inget rätt eller fel sätt att spela datorspel, 
                 spelen är oftast byggda för att spela på ett visst sätt eller
                 ger spelaren friheten att få göra som man vill under spelets gång.</p>
@@ -66,16 +68,23 @@
         </section>
         <section id="summary">
             <h2>Sammanfattning</h2>
-            <article>
-                <p>Datorspel finns tillgängligt</p>
+            <article class="summarytext">
+                <p>Datorspel finns tillgängligt på datorer såklart men det finns samma eller liknande
+                    spel på andra plattformar så som konsoller eller till och med mobilen.</p>
+
+                <p>Poängen med spel för mig är att ha roligt även om kompisarna mobbar dig
+                    för att du är för dålig på skjutarspel, sålänge man har roligt så finns det 
+                    spel för alla personer och alla kan hitta någonting som passar en själv.</p>
             </article>
         </section>
     </main>
-    <footer id="contact">
+    <!--Footer del som innehåller referenser till kontakt och referens material.-->
+    <footer id="contact" class="footer">
         <h2>Kontaktuppgifter och Referenser</h2>
         <p><a href="mailto:Spelgrottan@nånstansisverige.se">Email till Spelgrottan</a></p>
         <p><a href="tel:+123456">Telefonnummer</a></p>
         <p><a href="https://www.youtube.com/watch?v=BBJa32lCaaY">Referens</a></p>
+        <p><a href="#navigation">Tillbaka till navigationsbar</a></p>
     </footer>
     </body>
 </html>
